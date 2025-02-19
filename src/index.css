@@ -63,6 +63,8 @@ header a:hover {
 #top-main {
   background-color: var(--main-top);
   color: white;
+  padding: 20px;
+  font-size: 1.5rem;
 }
 
 #bottom-main {
@@ -83,3 +85,48 @@ main figure {
 
 
 /* footer */
+
+#footer-top {
+  background-image: url(../src/assets/img/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no repeat;
+  padding: 20px;
+}
+
+footer a {
+  color: var(--footer-list);
+}
+
+.white {
+  color: white;
+  font-size: 1.2rem;
+}
+
+#footer-top .bg-logo {
+  background: url(../src/assets/img/dc-logo-bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 20px;
+}
+
+#footer-bottom {
+  background-color: var(--footer-bottom);
+}
+
+footer button {
+  background-color: transparent;
+  border-color: var(--main-bottom);
+  padding: 10px;
+  color: white;
+}
+
+#footer-bottom ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer-bottom a {
+  color: var(--main-bottom);
+}
