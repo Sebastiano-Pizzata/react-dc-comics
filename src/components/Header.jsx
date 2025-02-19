@@ -3,7 +3,7 @@ import logo from "../assets/img/dc-logo.png"
 const Header = function () {
     return (
         <header>
-            <div className="container">
+            <div className="container flex">
 
                 <figure>
                     <img src={logo} alt="Logo" />
