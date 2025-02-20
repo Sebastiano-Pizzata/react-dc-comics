@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 :root {
@@ -63,8 +64,6 @@ header a:hover {
 #top-main {
   background-color: var(--main-top);
   color: white;
-  padding: 20px;
-  font-size: 1.5rem;
 }
 
 #bottom-main {
@@ -129,4 +128,25 @@ footer button {
 
 #footer-bottom a {
   color: var(--main-bottom);
+}
+
+/* cards */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.card {
+  padding: 20px;
+}
+
+.card img {
+  height: 500px;
+  width: 350px;
 }

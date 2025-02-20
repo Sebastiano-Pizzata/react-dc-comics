@@ -4,15 +4,13 @@ import shop from "/src/assets/img/buy-comics-shop-locator.png"
 import sub from "/src/assets/img/buy-comics-subscriptions.png"
 import buy from "/src/assets/img/buy-dc-power-visa.svg"
 
+import Comics from "./MainContent"
+import fumetti from "../assets/img/Comics/dc-comics-2/comics"
+
 const Main = function () {
     return (
         <main>
-            <section id="top-main">
-                <div className="container">
-                    <p>--Content goes here--</p>
-
-                </div>
-            </section>
+            <Comics albi={fumetti} />
             <section id="bottom-main">
                 <div className="container flex">
                     <figure>
