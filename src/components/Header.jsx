@@ -1,4 +1,18 @@
-import logo from "../assets/img/dc-logo.png"
+import logo from "../assets/img/dc-logo.png";
+import NavBar from "./NavBar"
+
+const navLinks = [
+    { id: 1, a: "#", text: "Characters" },
+    { id: 2, a: "#", text: "Comics" },
+    { id: 3, a: "#", text: "Movies" },
+    { id: 4, a: "#", text: "TV" },
+    { id: 5, a: "#", text: "Games" },
+    { id: 6, a: "#", text: "Collectibles" },
+    { id: 7, a: "#", text: "Videos" },
+    { id: 8, a: "#", text: "Fans" },
+    { id: 9, a: "#", text: "News" },
+    { id: 10, a: "#", text: "Shop" },
+]
 
 const Header = function () {
     return (
@@ -8,19 +22,7 @@ const Header = function () {
                 <figure>
                     <img src={logo} alt="Logo" />
                 </figure>
-
-                <ul>
-                    <li><a href="#">CHARACTERS</a></li>
-                    <li><a className="active" href="#">COMICS</a></li>
-                    <li><a href="#">MOVIES</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">GAMES</a></li>
-                    <li><a href="#">COLLECTIBLES</a></li>
-                    <li><a href="#">VIDEOS</a></li>
-                    <li><a href="#">FANS</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">SHOP</a></li>
-                </ul>
+                <NavBar links={navLinks} />
             </div>
         </header>
     )
